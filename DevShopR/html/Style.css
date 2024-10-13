@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #617ed0;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    width: 100vw; /* Đảm bảo tràn hết chiều ngang */
+}
+
+/* Bên trong header, giữ cho nội dung căn giữa */
+.header-container {
+    max-width: 12000px; /* Giới hạn nội dung trong một chiều rộng cố định */
+    margin: 0 auto; /* Căn giữa nội dung bên trong */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+    .logo img {
+        width: 60px;
+        height: auto;
+        margin-right: 30px;
+    }
+
+.nav-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.05rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 0.5rem;
+}
+
+    .search-bar input {
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+    }
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.search-icon {
+    width: 25px;
+    height: auto;
+    fill: #000;
+}
+
+.user a {
+    color: white;
+    margin-left: 0.5rem;
+    text-decoration: none;
+}
+
+.buy a {
+    color: white;
+    margin-left: 1rem;
+    margin-right: 2rem; /* Thêm khoảng cách dịch sang bên trái */
+    text-emphasis: none;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        flex-wrap: nowrap;
+    }
+
+    .search-bar {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo img {
+        width: 50px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-options {
+        margin-top: 1rem;
+    }
+
+        .nav-links a,
+        .user-options a {
+            margin: 0.5rem 0;
+        }
+}

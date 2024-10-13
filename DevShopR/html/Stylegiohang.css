@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.cart-section {
+    width: 65%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-section {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    font-size: 16px;
+    color: #888;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.item-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.item-details {
+    width: 40%;
+}
+
+.item-details h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.status {
+    font-size: 14px;
+}
+
+.in-stock {
+    color: green;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.item-quantity button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.item-quantity input {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.item-price {
+    text-align: right;
+}
+
+.item-price p {
+    margin: 0;
+}
+
+.original-price {
+    color: red;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+}
+
+.checkout-section h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.checkout-section p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.checkout-section h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.login-btn {
+    background-color: #007bff;
+}
+
+.mobile-banking-btn {
+    background-color: #28a745;
+}
+
+.momo-btn {
+    background-color: #ff4081;
+}
